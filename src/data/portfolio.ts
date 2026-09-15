@@ -95,8 +95,8 @@ export const sections: SectionMeta[] = [
   { id: 'operating-model', walkthroughTitle: 'My operating model', minutes: 1, exploreLabel: 'Experience Programs' },
   { id: 'daimler', walkthroughTitle: 'Daimler Mercedes-Benz: the channel experience', minutes: 1, parent: 'operating-model' },
   { id: 'ubs', walkthroughTitle: 'UBS: scaling across regions', minutes: 1, parent: 'operating-model' },
-  { id: 'nab-compass', walkthroughTitle: 'NAB Edge: governance and benefits', minutes: 1, parent: 'operating-model' },
-  { id: 'merck-cornerstone', walkthroughTitle: 'Merck ERMD: quality and repeatability', minutes: 1, parent: 'operating-model' },
+  { id: 'nab-compass', walkthroughTitle: 'NAB Compass: governance and benefits', minutes: 1, parent: 'operating-model' },
+  { id: 'merck-cornerstone', walkthroughTitle: 'Merck Cornerstone: quality and repeatability', minutes: 1, parent: 'operating-model' },
   { id: 'bank-of-america', walkthroughTitle: 'Bank of America: multi-party deployments', minutes: 0.5, parent: 'operating-model' },
   { id: 'build-once', walkthroughTitle: 'Build once, deploy many', minutes: 0.75 },
   { id: 'pax8-application', walkthroughTitle: 'A hypothetical Pax8 application', minutes: 1, exploreLabel: 'Pax8 Fit' },
@@ -204,12 +204,13 @@ export const operatingModelPillars: OperatingModelPillar[] = [
     businessProblem:
       'Digital lending for commercial vehicles and passenger cars had to work as one experience across markets — rent, buy and lease — while regional teams still faced different readiness, process and support realities.',
     myResponsibility:
-      'As Regional Program Manager and Coach, coordinate Infinit App delivery so customer-facing and market teams could adopt a one-stop digital lending ecosystem, not only the central build.',
+      'As Regional Program Manager and Coach, coordinate Simba delivery so customer-facing and market teams could adopt a one-stop digital lending ecosystem, not only the central build.',
     actions: [
       'Mapped the end-to-end digital lending journey from forms and OMR through e-sign, e-contracting, insurance and regulatory checks',
       'Aligned central IT (as managed service for the business) with regional operations in markets including Russia, Malaysia and Singapore',
-      'Built one integrated roadmap across platform, process, readiness, communication and adoption',
-      'Coached market teams through pilot use of Infinit before wider rollout',
+      'Partnered with Learning Academy owners so enablement matched the live Simba journey',
+      'Built one integrated roadmap across platform, process, Academy, readiness, communication and adoption',
+      'Coached market teams through pilot use of Simba before wider rollout',
     ],
     challenges: [
       'One platform serving rent, buy and lease journeys with different local constraints',
@@ -219,7 +220,7 @@ export const operatingModelPillars: OperatingModelPillar[] = [
     resolution:
       'Journey-based planning, role-specific readiness, named support routes and a coached pilot before scale-out.',
     reusableOutputs: [
-      'Digital lending journey map covering Infinit capabilities',
+      'Digital lending journey map covering Simba capabilities',
       'Role-specific readiness checklists for market teams',
       'Reusable deployment and coaching pack for later markets',
     ],
@@ -241,7 +242,7 @@ export const operatingModelPillars: OperatingModelPillar[] = [
     businessProblem:
       'A Singapore-led global stream had to land cloud and wealth-management capabilities across Hong Kong, Taiwan, India and China without fracturing into unmanaged local forks.',
     myResponsibility:
-      'As Program Manager, preserve a common program core while making each regional implementation practical, compliant and adoptable — including products such as UBS One that uplifted how clients trade.',
+      'As Program Manager, preserve a common program core while making each regional implementation practical, compliant and adoptable — including products such as Optimus that uplifted how clients trade.',
     actions: [
       'Led the global stream from Singapore and coordinated sub-streams in Hong Kong, Taiwan, India and China',
       'Classified requirements as global non-negotiables, mandatory local requirements or local preferences',
@@ -276,9 +277,9 @@ export const operatingModelPillars: OperatingModelPillar[] = [
     keyword: 'Governance',
     accent: 'amber',
     businessProblem:
-      'After NAB acquired Citi’s consumer finance business, Edge had to support unsecured lending products through multiple workstreams — without leadership losing a single view of delivery and benefits.',
+      'After NAB acquired Citi’s consumer finance business, Compass had to support unsecured lending products through multiple workstreams — without leadership losing a single view of delivery and benefits.',
     myResponsibility:
-      'As Delivery Lead, establish integrated governance so Edge delivery stayed visible, decision-ready and connected to adoption and benefits after go-live.',
+      'As Delivery Lead, establish integrated governance so Compass delivery stayed visible, decision-ready and connected to adoption and benefits after go-live.',
     actions: [
       'Created integrated cross-functional roadmaps across business, technology, operations, risk and change',
       'Introduced common milestone and status definitions with RAID and dependency ownership',
@@ -293,7 +294,7 @@ export const operatingModelPillars: OperatingModelPillar[] = [
     resolution:
       'One integrated roadmap, proportionate governance, decision-oriented reporting and benefits tracked beyond go-live.',
     reusableOutputs: [
-      'Integrated Edge roadmap and dependency model',
+      'Integrated Compass roadmap and dependency model',
       'Decision-oriented executive report pack',
       'Benefits hypothesis and measurement framework',
     ],
@@ -313,7 +314,7 @@ export const operatingModelPillars: OperatingModelPillar[] = [
     keyword: 'Repeatability',
     accent: 'magenta',
     businessProblem:
-      'ERMD needed to uplift endpoint protection, firewall and cloud capability with quality and traceability — without restarting process design on every workstream.',
+      'Cornerstone needed to uplift endpoint protection, firewall and cloud capability with quality and traceability — without restarting process design on every workstream.',
     myResponsibility:
       'As Senior Project Manager, establish a repeatable lifecycle so resiliency and data-integrity assets could be created once, reviewed effectively, released and reused.',
     actions: [
@@ -330,7 +331,7 @@ export const operatingModelPillars: OperatingModelPillar[] = [
     resolution:
       'Minimum quality standards, modular reusable assets, controlled versions and defined maintenance with feedback from every deployment.',
     reusableOutputs: [
-      'ERMD asset lifecycle with named roles',
+      'Cornerstone asset lifecycle with named roles',
       'Template and quality-criteria library',
       'Modular structure supporting controlled local variation',
     ],
@@ -359,37 +360,38 @@ export const caseStudies: CaseStudy[] = [
     order: 1,
     tier: 'primary',
     employer: 'Daimler Mercedes-Benz',
-    programName: 'Infinit',
+    programName: 'Simba',
     title: 'Daimler Mercedes-Benz: Designing a Consistent Channel Experience',
     eyebrow: 'Section 04 — Journey',
     role: verifiedField('Regional Program Manager and Coach'),
     timeframe: verifiedField('12 months'),
     capabilityDemonstrated:
-      'Partner journey, channel coordination, readiness, communications, support and adoption across a digital lending ecosystem.',
+      'Partner journey, Learning Academy enablement, channel coordination, readiness, communications, support and adoption across a digital lending ecosystem.',
     situation:
-      'At Daimler Mercedes-Benz, IT operated as a managed service for the business, building digital lending solutions so markets such as Russia, Malaysia and Singapore could establish Infinit App — a one-stop shop to rent, buy or lease Daimler commercial vehicles and passenger cars. The platform supported the full digital lending ecosystem: form extraction, OMR, e-sign, e-contracting, welcome letter, insurance components, regulatory compliance checks and related services. A centrally complete build could still create an inconsistent experience if market and customer-facing teams were not consulted, prepared or supported.',
+      'At Daimler Mercedes-Benz, IT operated as a managed service for the business, building digital lending solutions so markets such as Russia, Malaysia and Singapore could establish Simba — a one-stop shop to rent, buy or lease Daimler commercial vehicles and passenger cars. The platform supported the full digital lending ecosystem: form extraction, OMR, e-sign, e-contracting, welcome letter, insurance components, regulatory compliance checks and related services. Learning Academy and enablement teams prepared market and customer-facing roles to use Simba confidently. A centrally complete build could still create an inconsistent experience if those teams were not consulted, prepared or supported.',
     task:
-      'As Regional Program Manager and Coach, my responsibility was to coordinate end-to-end implementation and coaching so Infinit worked for the teams closest to the customer and the markets adopting it — not only for the teams designing it centrally.',
+      'As Regional Program Manager and Coach, my responsibility was to coordinate end-to-end implementation, Learning Academy enablement and coaching so Simba worked for the teams closest to the customer and the markets adopting it — not only for the teams designing it centrally.',
     actions: [
       'Mapped the complete stakeholder and digital lending journey across rent, buy and lease paths',
-      'Identified awareness, value communication, readiness, access, process, support and feedback stages for Infinit capabilities',
-      'Created an integrated roadmap across business, technology, operations, communication and adoption',
+      'Identified awareness, value communication, readiness, access, process, support and feedback stages for Simba capabilities',
+      'Partnered with Learning Academy and content owners so enablement modules matched the live Simba journey',
+      'Created an integrated roadmap across business, technology, operations, Academy, communication and adoption',
       'Distinguished common platform standards from legitimate local market adaptations',
       'Coordinated readiness reviews and ownership with regional stakeholders',
       'Piloted the approach with an initial market group and coached teams through first use',
-      'Converted the improved approach into reusable deployment and coaching assets',
+      'Converted the improved approach into reusable deployment, Academy and coaching assets',
       'Established feedback loops so later markets started further ahead',
     ],
     challenges: [
       'Central platform design versus local operational reality in each market',
       'Different stakeholder maturity across Russia, Malaysia and Singapore',
       'Unclear hand-offs between digital lending steps',
-      'Inconsistent communications about what Infinit could and could not do',
+      'Inconsistent communications about what Simba could and could not do',
       'Limited readiness visibility before launch',
       'Risk of technical completion without operational adoption',
     ],
     resolutions: [
-      'Journey-based planning anchored on the Infinit lending ecosystem',
+      'Journey-based planning anchored on the Simba lending ecosystem',
       'Role-specific readiness and coaching',
       'Common deployment assets for later markets',
       'Controlled local flexibility with named owners',
@@ -397,7 +399,7 @@ export const caseStudies: CaseStudy[] = [
       'Post-launch feedback into the next wave',
     ],
     reusableOutputs: [
-      'Journey map covering Infinit capabilities from forms through compliance and onboarding',
+      'Journey map covering Simba capabilities from forms through compliance and onboarding',
       'Readiness checklist per customer-facing and market role',
       'Deployment and coaching pack reused by later rollouts',
     ],
@@ -414,7 +416,7 @@ export const caseStudies: CaseStudy[] = [
         verified: false,
         publicSafe: true,
         placeholder: '[Number of stakeholder groups]',
-        explanation: 'Distinct functions and channel-facing groups inside the Infinit deployment scope.',
+        explanation: 'Distinct functions and channel-facing groups inside the Simba deployment scope.',
         level: 'delivery',
         countable: true,
       },
@@ -425,7 +427,7 @@ export const caseStudies: CaseStudy[] = [
         verified: false,
         publicSafe: true,
         placeholder: '[Number of rollout locations]',
-        explanation: 'Markets that received Infinit (including Russia, Malaysia and Singapore in scope).',
+        explanation: 'Markets that received Simba (including Russia, Malaysia and Singapore in scope).',
         level: 'engagement',
         countable: true,
       },
@@ -448,7 +450,7 @@ export const caseStudies: CaseStudy[] = [
         verified: false,
         publicSafe: true,
         placeholder: '[Improvement in adoption]',
-        explanation: 'Use of Infinit digital lending capabilities by market teams after launch.',
+        explanation: 'Use of Simba digital lending capabilities by market teams after launch.',
         level: 'capability',
       },
       {
@@ -458,20 +460,20 @@ export const caseStudies: CaseStudy[] = [
         verified: false,
         publicSafe: true,
         placeholder: '[Insert verified business outcome]',
-        explanation: 'The operational or commercial result attributed to the Infinit deployment.',
+        explanation: 'The operational or commercial result attributed to the Simba deployment.',
         level: 'business',
       },
     ],
     openVerifications: [
       '[Confirm whether dealers were directly involved]',
-      '[Confirm which Infinit capabilities can be named publicly in more detail]',
+      '[Confirm which Simba capabilities can be named publicly in more detail]',
       '[Insert number of markets beyond Russia, Malaysia and Singapore if applicable]',
     ],
     pax8Relevance:
       'A strong platform is only one link. Channel outcomes depend on enablement, communications, regional readiness, support and feedback — the same operating chain partners move through when adopting cloud and managed services.',
     confidentialityNote:
       'Described at the level of approach and coordination. Confidential process detail and commercial terms are excluded.',
-    tags: ['Partner journey', 'Infinit', 'Digital lending', 'Readiness', 'Regional coaching', 'Adoption'],
+    tags: ['Partner journey', 'Simba', 'Learning Academy', 'Digital lending', 'Readiness', 'Regional coaching', 'Adoption'],
     accent: 'cyan',
   },
   {
@@ -479,21 +481,22 @@ export const caseStudies: CaseStudy[] = [
     order: 2,
     tier: 'primary',
     employer: 'UBS',
-    programName: 'UBS One / Cloud capability',
+    programName: 'Optimus',
     title: 'UBS: Scaling a Common Program Across Regions',
     eyebrow: 'Section 05 — Scale',
     role: verifiedField('Program Manager'),
     timeframe: verifiedField('24 months'),
     capabilityDemonstrated:
-      'APAC scaling, global-local alignment, new-market readiness and wave-based rollout for cloud and wealth-management capabilities.',
+      'APAC scaling, Learning Academy enablement, global-local alignment, new-market readiness and wave-based rollout for cloud and wealth-management capabilities.',
     situation:
-      'At UBS, IT operated as a managed service for the business, building a global stream run from Singapore with sub-streams in Hong Kong, Taiwan, India and China. The program built cloud capability to support wealth-management products, including UBS One — uplifting how clients trade — as part of a broader one-stop ecosystem of services. A common core had to land across regions with different stakeholders, processes, control requirements and delivery capacity.',
+      'At UBS, IT operated as a managed service for the business on Optimus — a global stream run from Singapore with sub-streams in Hong Kong, Taiwan, India and China. The program built cloud capability to support wealth-management products, uplifting how clients trade, as part of a broader one-stop ecosystem of services. Learning Academy pathways had to stay aligned as each regional wave went live. A common core had to land across regions with different stakeholders, processes, control requirements and delivery capacity.',
     task:
-      'As Program Manager, my responsibility was to preserve a common program core while making each regional implementation practical, compliant and adoptable.',
+      'As Program Manager, my responsibility was to preserve a common Optimus program core — including Learning Academy readiness — while making each regional implementation practical, compliant and adoptable.',
     actions: [
       'Led the Singapore global stream and coordinated sub-streams across Hong Kong, Taiwan, India and China',
       'Classified requirements into global non-negotiables, mandatory local requirements and local preferences',
-      'Performed fit-gap assessments for cloud and product readiness by market',
+      'Performed fit-gap assessments for cloud, product and Academy readiness by market',
+      'Synchronised Learning Academy content releases with each regional wave',
       'Conducted regional readiness reviews before each wave',
       'Created a reusable deployment lifecycle for subsequent markets',
       'Maintained one integrated roadmap with regional milestones',
@@ -579,19 +582,19 @@ export const caseStudies: CaseStudy[] = [
         verified: false,
         publicSafe: true,
         placeholder: '[Verified adoption result]',
-        explanation: 'Regional take-up of cloud and wealth-management capabilities such as UBS One.',
+        explanation: 'Regional take-up of cloud and wealth-management capabilities such as Optimus.',
         level: 'capability',
       },
     ],
     openVerifications: [
-      '[Confirm which product names beyond UBS One can be stated publicly]',
+      '[Confirm which product names beyond Optimus can be stated publicly]',
       '[Insert verified adoption or reuse figures when cleared]',
     ],
     pax8Relevance:
       'Regional scale works when a common core stays steady and local edges are configured deliberately — the pattern needed when enablement and transformation programs move across Australia and APAC.',
     confidentialityNote:
       'Regional detail is kept at program level. No client data, control documentation or internal process specifics are included.',
-    tags: ['APAC', 'Singapore hub', 'Wave rollout', 'Cloud', 'Wealth management', 'UBS One'],
+    tags: ['APAC', 'Singapore hub', 'Optimus', 'Learning Academy', 'Wave rollout', 'Cloud', 'Wealth management'],
     accent: 'violet',
   },
   {
@@ -599,26 +602,27 @@ export const caseStudies: CaseStudy[] = [
     order: 3,
     tier: 'primary',
     employer: 'NAB',
-    programName: 'Edge',
-    title: 'NAB Edge: Governance That Connects Delivery to Benefits',
+    programName: 'Compass',
+    title: 'NAB Compass: Governance That Connects Delivery to Benefits',
     eyebrow: 'Section 06 — Governance',
     role: verifiedField('Delivery Lead'),
     timeframe: verifiedField('13 months'),
     capabilityDemonstrated:
-      'Program roadmaps, governance, executive reporting, dependencies, risks, resource coordination and benefits realisation for unsecured lending platforms.',
+      'Program roadmaps, Learning Academy coordination, governance, executive reporting, dependencies, risks, resource coordination and benefits realisation for unsecured lending platforms.',
     situation:
-      'At NAB, IT operated as a managed service for the business, building the Edge platform to support unsecured lending products after NAB acquired the consumer finance business from Citi. Edge was designed as a modern, one-stop ecosystem of services. Multiple business, technology, operations, risk and change workstreams each held plans of their own — leadership needed one reliable view of integrated delivery and expected benefits.',
+      'At NAB, IT operated as a managed service for the business on the Compass program to support unsecured lending products after NAB acquired the consumer finance business from Citi. Compass was designed as a modern, one-stop ecosystem of services, with Learning Academy enablement part of how teams became ready to operate it. Multiple business, technology, operations, risk, change and Academy workstreams each held plans of their own — leadership needed one reliable view of integrated delivery and expected benefits.',
     task:
-      'As Delivery Lead, I established a reusable governance and benefits framework that improved visibility and accountability for Edge without adding unnecessary administrative burden.',
+      'As Delivery Lead, I established a reusable governance and benefits framework that improved visibility and accountability for Compass — including Academy and enablement dependencies — without adding unnecessary administrative burden.',
     actions: [
-      'Defined the business problem, target audience and expected outcome for Edge unsecured lending capabilities',
+      'Defined the business problem, target audience and expected outcome for Compass unsecured lending capabilities',
       'Created integrated cross-functional roadmaps across the post-acquisition delivery landscape',
+      'Brought Learning Academy milestones onto the same roadmap as platform and change workstreams',
       'Introduced common milestone and status definitions',
       'Established RAID, dependency, action and decision management',
       'Defined sponsors, owners and escalation paths',
       'Separated delivery reviews from executive decision forums',
-      'Introduced readiness criteria before release',
-      'Connected communications, change and adoption to the delivery plan',
+      'Introduced readiness criteria before release, including Academy completion where required',
+      'Connected communications, change, Academy and adoption to the delivery plan',
       'Defined benefit hypotheses, baselines and ownership',
       'Continued measurement beyond implementation',
     ],
@@ -639,13 +643,13 @@ export const caseStudies: CaseStudy[] = [
       'Benefits tracked after launch',
     ],
     reusableOutputs: [
-      'Integrated Edge roadmap template with common milestone definitions',
+      'Integrated Compass roadmap template with common milestone definitions',
       'RAID, dependency and decision registers with named owners',
       'Executive pack structured around decisions requested',
       'Benefits hypothesis, baseline and ownership model',
     ],
     successMeasures: [
-      'Leadership worked from one view of Edge delivery instead of several',
+      'Leadership worked from one view of Compass delivery instead of several',
       'Status was evidenced, so red meant red',
       'Benefit owners remained accountable after implementation closed',
     ],
@@ -657,7 +661,7 @@ export const caseStudies: CaseStudy[] = [
         verified: false,
         publicSafe: true,
         placeholder: '[Number of workstreams]',
-        explanation: 'Business, technology, operations, risk and change workstreams in one Edge roadmap.',
+        explanation: 'Business, technology, operations, risk and change workstreams in one Compass roadmap.',
         level: 'delivery',
         countable: true,
       },
@@ -700,7 +704,7 @@ export const caseStudies: CaseStudy[] = [
         verified: false,
         publicSafe: true,
         placeholder: '[Benefits achieved]',
-        explanation: 'Benefits measured against baseline after Edge implementation.',
+        explanation: 'Benefits measured against baseline after Compass implementation.',
         level: 'business',
       },
       {
@@ -717,13 +721,13 @@ export const caseStudies: CaseStudy[] = [
     openVerifications: [
       '[Insert budget]',
       '[Insert number of stakeholders]',
-      '[Confirm which Edge product details can be stated publicly]',
+      '[Confirm which Compass product details can be stated publicly]',
     ],
     pax8Relevance:
       'Delivery health and benefits have to stay connected. When a platform or enablement program launches, the roadmap should still track participation, capability, application and commercial impact.',
     confidentialityNote:
       'Framework and approach only. No portfolio data, financials, risk detail or internal reporting artefacts are reproduced.',
-    tags: ['Edge', 'Governance', 'Unsecured lending', 'RAID', 'Benefits realisation', 'Integration'],
+    tags: ['Compass', 'Learning Academy', 'Governance', 'Unsecured lending', 'RAID', 'Benefits realisation', 'Integration'],
     accent: 'amber',
   },
   {
@@ -731,21 +735,21 @@ export const caseStudies: CaseStudy[] = [
     order: 4,
     tier: 'primary',
     employer: 'Merck',
-    programName: 'ERMD',
-    title: 'Merck ERMD: Quality and Repeatability Without Unnecessary Bureaucracy',
+    programName: 'Cornerstone',
+    title: 'Merck Cornerstone: Quality and Repeatability Without Unnecessary Bureaucracy',
     eyebrow: 'Section 07 — Repeatability',
     role: verifiedField('Sr. Project Manager'),
     timeframe: verifiedField('24 months'),
     capabilityDemonstrated:
-      'Enterprise resiliency lifecycle, quality, documentation, ownership, version control, reusable assets and continuous improvement.',
+      'Enterprise resiliency lifecycle, Learning Academy content quality, documentation, ownership, version control, reusable assets and continuous improvement.',
     situation:
-      'At Merck, IT operated as a managed service for the business on the ERMD program — Enterprise Resiliency Modernization and Data Integrity — uplifting endpoint protection, firewall and cloud capability as part of a modern, integrated service ecosystem. Teams required strong quality and traceability, but inconsistent templates, review practices and ownership created repeated effort and uncertainty about readiness.',
+      'At Merck, IT operated as a managed service for the business on the Cornerstone program for enterprise resiliency, modernization and data integrity — uplifting endpoint protection, firewall and cloud capability as part of a modern, integrated service ecosystem. Learning Academy and specialist content had to stay accurate as controls changed. Teams required strong quality and traceability, but inconsistent templates, review practices and ownership created repeated effort and uncertainty about readiness.',
     task:
-      'As Senior Project Manager, I helped establish a repeatable lifecycle so resiliency and data-integrity assets could be created once, reviewed effectively, released and reused across subsequent implementations.',
+      'As Senior Project Manager, I helped establish a repeatable Cornerstone lifecycle so resiliency, data-integrity and Learning Academy assets could be created once, reviewed effectively, released and reused across subsequent implementations.',
     actions: [
       'Mapped the asset lifecycle from need through development, specialist review, approval, release, feedback and maintenance',
-      'Defined target audiences and use cases across endpoint, firewall and cloud workstreams',
-      'Clarified author, reviewer, approver and owner roles',
+      'Defined target audiences and use cases across endpoint, firewall, cloud and Learning Academy workstreams',
+      'Clarified author, reviewer, approver and owner roles — keeping Academy specialists accountable for educational accuracy',
       'Established reusable templates',
       'Introduced quality and acceptance criteria',
       'Defined review and approval milestones',
@@ -772,7 +776,7 @@ export const caseStudies: CaseStudy[] = [
       'Feedback from each deployment',
     ],
     reusableOutputs: [
-      'ERMD asset lifecycle with author, reviewer, approver and owner named at each stage',
+      'Cornerstone asset lifecycle with author, reviewer, approver and owner named at each stage',
       'Template library with acceptance criteria',
       'Modular content structure enabling controlled local variants',
       'Review, maintenance and retirement schedule',
@@ -823,7 +827,7 @@ export const caseStudies: CaseStudy[] = [
         verified: false,
         publicSafe: true,
         placeholder: '[Number of deployments]',
-        explanation: 'Implementations that drew on the reusable ERMD lifecycle.',
+        explanation: 'Implementations that drew on the reusable Cornerstone lifecycle.',
         level: 'engagement',
         countable: true,
       },
@@ -839,14 +843,14 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
     openVerifications: [
-      '[Confirm which ERMD control domains can be described in more detail publicly]',
+      '[Confirm which Cornerstone control domains can be described in more detail publicly]',
       '[Confirm whether I authored assets or coordinated authors and reviewers]',
     ],
     pax8Relevance:
       'Specialists retain ownership of technical accuracy. Program management runs the roadmap, dependencies, readiness, pilot, launch and measurement — bringing quality discipline without importing unnecessary bureaucracy into a fast-moving environment.',
     confidentialityNote:
       'Lifecycle design only. No regulated documentation, validation evidence or proprietary content is reproduced.',
-    tags: ['ERMD', 'Resiliency', 'Content lifecycle', 'Quality', 'Version control', 'Reuse'],
+    tags: ['Cornerstone', 'Learning Academy', 'Resiliency', 'Content lifecycle', 'Quality', 'Version control', 'Reuse'],
     accent: 'magenta',
   },
   {
@@ -860,15 +864,16 @@ export const caseStudies: CaseStudy[] = [
     role: verifiedField('Delivery Lead and Coach'),
     timeframe: verifiedField('12 months'),
     capabilityDemonstrated:
-      'Business and technology orchestration, vendor dependencies, repeatable deployment stages, go/no-go decisions, hypercare and handover for APAC digital banking.',
+      'Business and technology orchestration, Learning Academy readiness, vendor dependencies, repeatable deployment stages, go/no-go decisions, hypercare and handover for APAC digital banking.',
     situation:
-      'At Bank of America, IT operated as a managed service for the business, building eBanking and mobile banking capabilities so APAC markets could benefit from a modern, one-stop digital banking ecosystem. Client and market deployments required business and technology teams, risk and control stakeholders, and internal or external vendors to commit to the same sequence. Any one party moving late moved the whole date.',
+      'At Bank of America, IT operated as a managed service for the business, building eBanking and mobile banking capabilities so APAC markets could benefit from a modern, one-stop digital banking ecosystem. Learning Academy and coaching prepared regional teams before each go-live. Client and market deployments required business and technology teams, risk and control stakeholders, and internal or external vendors to commit to the same sequence. Any one party moving late moved the whole date.',
     task:
-      'As Delivery Lead and Coach, my responsibility was to coordinate the parties through repeatable deployment stages — and coach teams through readiness — so each implementation started from proven ground rather than from scratch.',
+      'As Delivery Lead and Coach, my responsibility was to coordinate the parties through repeatable deployment stages — and coach teams through Learning Academy and operational readiness — so each implementation started from proven ground rather than from scratch.',
     actions: [
       'Orchestrated business and technology delivery against one sequence for eBanking and mobile banking',
       'Engaged risk and control stakeholders early rather than at approval',
       'Managed internal and external vendor dependencies as explicit commitments',
+      'Aligned Learning Academy completion with deployment readiness criteria',
       'Ran fit-gap assessment for each new market or client deployment',
       'Coordinated testing and readiness evidence',
       'Held genuine go/no-go decisions against defined criteria',
@@ -951,7 +956,7 @@ export const caseStudies: CaseStudy[] = [
       'Multi-party programs only move when vendor, regional and business commitments are explicit dependencies — the same discipline required when technology providers, regional teams and partners share one roadmap.',
     confidentialityNote:
       'Market identities, architecture and control detail are excluded. Only the coordination pattern is described.',
-    tags: ['Multi-party delivery', 'APAC', 'eBanking', 'Vendor coordination', 'Go/no-go', 'Coaching'],
+    tags: ['Multi-party delivery', 'APAC', 'Learning Academy', 'eBanking', 'Vendor coordination', 'Go/no-go', 'Coaching'],
     accent: 'cyan',
   },
 ];
@@ -1100,56 +1105,23 @@ export const closingContent = {
   statement:
     'I connect teams, regions, content, technology and governance to create partner experiences that can be launched confidently, adopted effectively and improved continuously.',
   summary: [
-    { id: 'daimler', employer: 'Daimler', contribution: 'Partner journey' },
-    { id: 'ubs', employer: 'UBS', contribution: 'Regional scale' },
-    { id: 'nab-compass', employer: 'NAB Edge', contribution: 'Governance and benefits' },
-    { id: 'merck-cornerstone', employer: 'Merck ERMD', contribution: 'Quality and repeatability' },
+    { id: 'daimler', employer: 'Daimler Simba', contribution: 'Partner journey' },
+    { id: 'ubs', employer: 'UBS Optimus', contribution: 'Regional scale' },
+    { id: 'nab-compass', employer: 'NAB Compass', contribution: 'Governance and benefits' },
+    { id: 'merck-cornerstone', employer: 'Merck Cornerstone', contribution: 'Quality and repeatability' },
   ],
 } as const;
 
 /**
- * Replace every placeholder href before sharing this site with anybody.
- * `isPlaceholder: true` renders a "configure before sharing" hint in review mode.
+ * Public contact actions. LinkedIn is the only share path on this site.
  */
 export const contactActions: ContactAction[] = [
   {
-    id: 'resume',
-    label: 'Download résumé',
-    href: './resume/sanjay-singh-rawat-resume.pdf',
-    kind: 'resume',
-    isPlaceholder: true,
-    description: 'PDF résumé. Drop the real file at public/resume/ using this exact filename.',
-  },
-  {
     id: 'linkedin',
-    label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/REPLACE-WITH-PROFILE',
+    label: 'Connect on LinkedIn',
+    href: 'https://www.linkedin.com/in/sanjaysingh13/',
     kind: 'linkedin',
-    isPlaceholder: true,
-    description: 'Public LinkedIn profile.',
-  },
-  {
-    id: 'email',
-    label: 'Email',
-    href: 'mailto:REPLACE-WITH-EMAIL@example.com?subject=Pax8%20Partner%20Experience%20conversation',
-    kind: 'email',
-    isPlaceholder: true,
-    description: 'Direct email with a pre-filled subject line.',
-  },
-  {
-    id: 'booking',
-    label: 'Book a conversation',
-    href: 'https://REPLACE-WITH-BOOKING-LINK.example.com',
-    kind: 'booking',
-    isPlaceholder: true,
-    description: 'Scheduling link for a 30-minute conversation.',
-  },
-  {
-    id: 'print',
-    label: 'Print-friendly case studies',
-    href: '#print',
-    kind: 'print',
     isPlaceholder: false,
-    description: 'Opens the browser print dialog with a linear, ink-friendly layout.',
+    description: 'Public LinkedIn profile.',
   },
 ];

@@ -102,12 +102,11 @@ describe('content integrity', () => {
     expect(pax8Understanding.boundary).toMatch(/have not managed MSP partners directly/i);
   });
 
-  it('flags contact details that are still placeholders', () => {
-    const placeholders = contactActions.filter((action) => action.isPlaceholder);
-    expect(placeholders.length).toBeGreaterThan(0);
-    for (const action of placeholders) {
-      expect(action.href).toMatch(/REPLACE|resume\//i);
-    }
+  it('keeps LinkedIn as the only configured contact action', () => {
+    expect(contactActions).toHaveLength(1);
+    expect(contactActions[0].kind).toBe('linkedin');
+    expect(contactActions[0].isPlaceholder).toBe(false);
+    expect(contactActions[0].href).toMatch(/linkedin\.com\/in\//i);
   });
 
   it('ships in review mode by default so nothing unverified slips out silently', () => {

@@ -142,7 +142,7 @@ export const scalingChallenges: ChallengeResolution[] = [
       'A three-person MSP and a mature service provider require different depth and support.',
     response:
       'Create foundation and advanced pathways, segment by role and maturity, retain a common core and compare metrics by cohort.',
-    drawsOn: 'Merck ERMD — modularity',
+    drawsOn: 'Merck Cornerstone — modularity',
     tags: ['Pathways', 'Cohorts'],
   },
   {
@@ -161,8 +161,8 @@ export const scalingChallenges: ChallengeResolution[] = [
     title: 'Rapidly changing technology',
     problem: 'Cloud, cybersecurity and AI material can become outdated during development.',
     response:
-      'Use ERMD-style modular content, owners, versions, update triggers and retirement dates.',
-    drawsOn: 'Merck ERMD — repeatability',
+      'Use Cornerstone-style modular content, owners, versions, update triggers and retirement dates.',
+    drawsOn: 'Merck Cornerstone — repeatability',
     tags: ['Version control', 'Modularity'],
   },
   {
@@ -172,7 +172,7 @@ export const scalingChallenges: ChallengeResolution[] = [
     problem: 'Technical and product experts support multiple priorities.',
     response:
       'Forecast demand, reserve capacity, provide focused briefs, define approval dates and escalate portfolio conflicts early.',
-    drawsOn: 'NAB Edge — governance',
+    drawsOn: 'NAB Compass — governance',
     tags: ['Capacity', 'Briefs'],
   },
   {
@@ -183,7 +183,7 @@ export const scalingChallenges: ChallengeResolution[] = [
       'Content, Marketing, Sales and regions can optimise their own deliverables without owning the complete partner outcome.',
     response:
       'Maintain one integrated roadmap, shared readiness criteria, named dependencies and one accountable outcome sponsor.',
-    drawsOn: 'NAB Edge — governance',
+    drawsOn: 'NAB Compass — governance',
     tags: ['Integrated roadmap', 'Accountability'],
   },
   {
@@ -204,7 +204,7 @@ export const scalingChallenges: ChallengeResolution[] = [
       'Learning, campaign, Marketplace, support and commercial data may sit in separate systems.',
     response:
       'Define the minimum viable measurement model and improve data maturity incrementally.',
-    drawsOn: 'NAB Edge — benefits',
+    drawsOn: 'NAB Compass — benefits',
     tags: ['Measurement', 'Data maturity'],
   },
   {
@@ -225,7 +225,7 @@ export const scalingChallenges: ChallengeResolution[] = [
     problem: 'Creative and regional teams may perceive governance as bureaucracy.',
     response:
       'Co-design minimum viable governance and use it to accelerate decisions and remove blockers.',
-    drawsOn: 'NAB Edge — proportionate governance',
+    drawsOn: 'NAB Compass — proportionate governance',
     tags: ['Minimum viable governance', 'Co-design'],
   },
   {
@@ -236,7 +236,7 @@ export const scalingChallenges: ChallengeResolution[] = [
       'More initiatives may be approved than Content, Marketing, facilitators and regions can support.',
     response:
       'Create a consolidated roadmap and capacity view, then force explicit prioritisation and trade-off decisions.',
-    drawsOn: 'NAB Edge — portfolio view',
+    drawsOn: 'NAB Compass — portfolio view',
     tags: ['Capacity', 'Prioritisation'],
   },
   {
