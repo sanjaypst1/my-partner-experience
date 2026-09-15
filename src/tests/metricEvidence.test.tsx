@@ -1,8 +1,22 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { MetricEvidenceCard } from '@/components/charts/MetricEvidenceCard';
 import { EVIDENCE_PENDING_LABEL } from '@/data/metrics';
 import type { Metric } from '@/types/portfolio';
+import type * as PortfolioData from '@/data/portfolio';
+
+/**
+ * These rules are written against review mode so we can assert the pending-label
+ * behaviour. Production mode (share-ready) is covered in productionMode.test.tsx
+ * and in the final test below.
+ */
+vi.mock('@/data/portfolio', async (importOriginal) => {
+  const actual = await importOriginal<typeof PortfolioData>();
+  return {
+    ...actual,
+    siteConfig: { ...actual.siteConfig, showUnverifiedPlaceholders: true },
+  };
+});
 
 const base: Metric = {
   id: 'test-metric',
