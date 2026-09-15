@@ -62,14 +62,14 @@ export function EvidenceCoverageChart() {
             <CartesianGrid stroke="rgba(15,23,41,0.08)" vertical={false} />
             <XAxis
               dataKey="shortLevel"
-              stroke="#5a6780"
-              tick={{ fontSize: 12, fill: '#5a6780' }}
+              stroke="#6e6e73"
+              tick={{ fontSize: 12, fill: '#6e6e73' }}
               tickLine={false}
-              axisLine={{ stroke: 'rgba(15,23,41,0.12)' }}
+              axisLine={{ stroke: 'rgba(29,29,31,0.12)' }}
             />
             <YAxis
-              stroke="#5a6780"
-              tick={{ fontSize: 12, fill: '#5a6780' }}
+              stroke="#6e6e73"
+              tick={{ fontSize: 12, fill: '#6e6e73' }}
               tickLine={false}
               axisLine={false}
               allowDecimals={false}
@@ -77,13 +77,13 @@ export function EvidenceCoverageChart() {
             <Tooltip
               contentStyle={{
                 background: '#ffffff',
-                border: '1px solid rgba(15,23,41,0.12)',
-                borderRadius: 12,
-                color: '#0f1729',
+                border: '1px solid rgba(29,29,31,0.1)',
+                borderRadius: 14,
+                color: '#1d1d1f',
                 fontSize: 13,
               }}
             />
-            <Legend wrapperStyle={{ fontSize: 12, color: '#5a6780' }} />
+            <Legend wrapperStyle={{ fontSize: 12, color: '#6e6e73' }} />
             <Bar dataKey="Confirmed" stackId="a" fill={accentTokens.cyan.hex} radius={[0, 0, 0, 0]} />
             <Bar
               dataKey="Being validated"

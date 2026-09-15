@@ -8,16 +8,16 @@ type Size = 'md' | 'sm';
 
 const variants: Record<Variant, string> = {
   primary:
-    'bg-signal-cyan text-white hover:bg-slateMuted-100 focus-visible:bg-slateMuted-100 font-semibold shadow-glow',
+    'rounded-full bg-signal-cyan text-white hover:bg-[#0077ed] focus-visible:bg-[#0077ed] font-semibold shadow-glow',
   secondary:
-    'border border-slateMuted-100/20 bg-white text-slateMuted-100 hover:border-signal-cyan/60 hover:bg-midnight-900',
-  ghost: 'text-slateMuted-200 hover:text-slateMuted-100 hover:bg-slateMuted-100/[0.06]',
+    'rounded-full border border-slateMuted-100/15 bg-white text-signal-cyan hover:bg-midnight-900',
+  ghost: 'rounded-full text-slateMuted-200 hover:text-slateMuted-100 hover:bg-slateMuted-100/[0.06]',
   quiet: 'text-slateMuted-300 hover:text-signal-cyan underline decoration-dotted underline-offset-4',
 };
 
 const sizes: Record<Size, string> = {
-  md: 'px-5 py-3 text-[0.95rem]',
-  sm: 'px-3.5 py-2 text-[0.85rem]',
+  md: 'px-6 py-3 text-[1rem]',
+  sm: 'px-4 py-2 text-[0.88rem]',
 };
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {

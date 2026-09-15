@@ -5,11 +5,10 @@
 @layer base {
   :root {
     color-scheme: light;
-    --shell-padding: clamp(1.25rem, 4vw, 4rem);
+    --shell-padding: clamp(1.25rem, 4vw, 3.5rem);
   }
 
   * {
-    /* Anchor scrolling must clear the sticky header. */
     scroll-margin-top: 6.5rem;
   }
 
@@ -20,11 +19,11 @@
 
   body {
     @apply bg-midnight-950 font-sans text-slateMuted-200 antialiased;
-    /* 16px minimum body size for readability. */
-    font-size: 1rem;
-    line-height: 1.65;
+    font-size: 1.0625rem;
+    line-height: 1.6;
     min-height: 100vh;
     overflow-x: hidden;
+    letter-spacing: -0.01em;
   }
 
   h1,
@@ -33,27 +32,26 @@
   h4 {
     @apply font-display text-slateMuted-100;
     text-wrap: balance;
+    font-weight: 650;
   }
 
   p {
     text-wrap: pretty;
   }
 
-  /* Visible, high-contrast focus for every interactive element. */
   :focus-visible {
     outline: 3px solid theme('colors.signal.cyan');
     outline-offset: 3px;
-    border-radius: 0.35rem;
+    border-radius: 980px;
   }
 
   ::selection {
-    background: theme('colors.signal.violet');
-    color: #fff;
+    background: rgb(0 113 227 / 0.18);
+    color: #1d1d1f;
   }
 
-  /* Firefox-friendly scrollbar treatment. */
   * {
-    scrollbar-color: theme('colors.midnight.600') theme('colors.midnight.950');
+    scrollbar-color: theme('colors.midnight.700') theme('colors.midnight.950');
   }
 }
 
@@ -63,39 +61,37 @@
   }
 
   .glass {
-    @apply rounded-xl2 border border-slateMuted-100/10 bg-white shadow-glass backdrop-blur-[2px];
+    @apply rounded-xl2 border border-slateMuted-100/10 bg-white shadow-glass;
   }
 
   .glass-strong {
-    @apply rounded-xl2 border border-slateMuted-100/10 bg-white shadow-glass backdrop-blur-md;
+    @apply rounded-xl2 border border-slateMuted-100/10 bg-white/95 shadow-glass backdrop-blur-xl;
   }
 
   .eyebrow {
-    @apply font-mono text-[0.72rem] uppercase tracking-[0.28em] text-signal-cyan;
+    @apply font-sans text-[0.78rem] font-semibold uppercase tracking-[0.14em] text-signal-cyan;
   }
 
   .prose-readable {
-    @apply max-w-prose text-fluid-lead text-slateMuted-200;
+    @apply max-w-prose text-fluid-lead text-slateMuted-300;
   }
 
-  /* Subtle film grain. Pure decoration, hidden from assistive tech. */
+  /* Very light grain — atmosphere without muddying text. */
   .grain::after {
     content: '';
     position: fixed;
     inset: 0;
     z-index: 60;
     pointer-events: none;
-    opacity: 0.05;
-    mix-blend-mode: overlay;
+    opacity: 0.02;
+    mix-blend-mode: multiply;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
   }
 
   .hairline {
-    @apply h-px w-full bg-gradient-to-r from-transparent via-slateMuted-100/15 to-transparent;
+    @apply h-px w-full bg-gradient-to-r from-transparent via-slateMuted-100/10 to-transparent;
   }
 
-  /* Elements revealed by GSAP start hidden only when motion is enabled, so the
-     content is never trapped invisible for reduced-motion or no-JS readers. */
   [data-animate='pending'] {
     opacity: 0;
     transform: translateY(18px);
@@ -115,15 +111,13 @@
   .sr-only-focusable:not(:focus):not(:focus-within) {
     position: absolute;
     width: 1px;
-    height: 1px
-    ;
+    height: 1px;
     overflow: hidden;
     clip: rect(0 0 0 0);
     white-space: nowrap;
   }
 }
 
-/* Respect the OS setting: no transforms, no transitions, no autoplay motion. */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -144,7 +138,6 @@
   }
 }
 
-/* Manual pause switch: same guarantees as the OS setting. */
 [data-motion='paused'] *,
 [data-motion='paused'] *::before,
 [data-motion='paused'] *::after {
@@ -156,7 +149,6 @@
   transform: none;
 }
 
-/* Print: linear, ink-friendly case studies. */
 @media print {
   @page {
     margin: 16mm;

@@ -43,7 +43,7 @@ export function HeroSection() {
 
           <h1 id="hero-heading" className="mt-5 text-fluid-hero" data-animate="pending">
             Building Partner Experiences{' '}
-            <span className="bg-gradient-to-r from-signal-cyan via-signal-violet to-signal-magenta bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-signal-cyan via-[#af52de] to-signal-magenta bg-clip-text text-transparent">
               That Scale
             </span>
           </h1>

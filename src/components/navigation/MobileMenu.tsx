@@ -56,7 +56,7 @@ export function MobileMenu() {
           role="dialog"
           aria-modal="true"
           aria-label="Site sections"
-          className="fixed inset-0 z-[70] flex flex-col bg-midnight-950/97 backdrop-blur-md"
+          className="fixed inset-0 z-[70] flex flex-col bg-white/96 backdrop-blur-md"
         >
           <div className="flex items-center justify-between border-b border-slateMuted-100/10 px-5 py-4">
             <p className="font-display text-[1rem] text-slateMuted-100">Explore freely</p>

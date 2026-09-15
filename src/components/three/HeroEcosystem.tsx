@@ -328,8 +328,8 @@ export default function HeroEcosystem() {
       style={{ pointerEvents: 'none' }}
     >
       <ambientLight intensity={0.22} />
-      <pointLight position={[0, 2, 4]} intensity={10} color="#8b6cff" distance={14} />
-      <pointLight position={[3, -2, 3]} intensity={7} color="#3ee8f2" distance={14} />
+      <pointLight position={[0, 2, 4]} intensity={10} color="#7c3aed" distance={14} />
+      <pointLight position={[3, -2, 3]} intensity={7} color="#0071e3" distance={14} />
       <FitToViewport>
         <PlatformHalo />
         <LinkLines />

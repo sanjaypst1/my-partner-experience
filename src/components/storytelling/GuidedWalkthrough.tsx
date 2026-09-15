@@ -42,7 +42,7 @@ export function GuidedWalkthrough() {
           transition={transition}
           aria-label="Guided walkthrough controls"
           data-print="hide"
-          className="fixed inset-x-0 bottom-0 z-50 border-t border-slateMuted-100/10 bg-midnight-900/95 backdrop-blur-md"
+          className="fixed inset-x-0 bottom-0 z-50 border-t border-slateMuted-100/10 bg-white/90 backdrop-blur-xl"
         >
           <div className="shell flex flex-col gap-3 py-3">
             <WalkthroughProgress index={index} total={total} />

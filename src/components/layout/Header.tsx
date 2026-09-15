@@ -25,8 +25,8 @@ export function Header() {
       className={cn(
         'fixed inset-x-0 top-0 z-40 transition-colors duration-500',
         condensed
-          ? 'border-b border-slateMuted-100/10 bg-midnight-950/88 backdrop-blur-md'
-          : 'bg-gradient-to-b from-midnight-950/85 to-transparent',
+          ? 'border-b border-slateMuted-100/10 bg-white/80 backdrop-blur-xl'
+          : 'bg-gradient-to-b from-midnight-950/95 to-transparent',
       )}
     >
       <div className="shell flex items-center justify-between gap-4 py-3">
