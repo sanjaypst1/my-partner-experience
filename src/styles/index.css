@@ -63,11 +63,11 @@
   }
 
   .glass {
-    @apply rounded-xl2 border border-slateMuted-100/10 bg-white/80 shadow-glass backdrop-blur-[2px];
+    @apply rounded-xl2 border border-slateMuted-100/10 bg-white shadow-glass backdrop-blur-[2px];
   }
 
   .glass-strong {
-    @apply rounded-xl2 border border-slateMuted-100/12 bg-white/92 shadow-glass backdrop-blur-md;
+    @apply rounded-xl2 border border-slateMuted-100/10 bg-white shadow-glass backdrop-blur-md;
   }
 
   .eyebrow {
