@@ -1,0 +1,17 @@
+{
+  "name": "Sanjay Singh Rawat — Partner Experience Portfolio",
+  "short_name": "PX Portfolio",
+  "description": "An interactive Partner Experience case-study walkthrough.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#04060f",
+  "theme_color": "#04060f",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

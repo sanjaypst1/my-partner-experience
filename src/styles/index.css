@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --shell-padding: clamp(1.25rem, 4vw, 4rem);
+  }
+
+  * {
+    /* Anchor scrolling must clear the sticky header. */
+    scroll-margin-top: 6.5rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-midnight-950 font-sans text-slateMuted-200 antialiased;
+    /* 16px minimum body size for readability. */
+    font-size: 1rem;
+    line-height: 1.65;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-slateMuted-100;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Visible, high-contrast focus for every interactive element. */
+  :focus-visible {
+    outline: 3px solid theme('colors.signal.cyan');
+    outline-offset: 3px;
+    border-radius: 0.35rem;
+  }
+
+  ::selection {
+    background: theme('colors.signal.violet');
+    color: #fff;
+  }
+
+  /* Firefox-friendly scrollbar treatment. */
+  * {
+    scrollbar-color: theme('colors.midnight.600') transparent;
+  }
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto w-full max-w-shell px-[var(--shell-padding)];
+  }
+
+  .glass {
+    @apply rounded-xl2 border border-white/10 bg-white/[0.035] shadow-glass backdrop-blur-[2px];
+  }
+
+  .glass-strong {
+    @apply rounded-xl2 border border-white/[0.14] bg-midnight-850/85 shadow-glass backdrop-blur-md;
+  }
+
+  .eyebrow {
+    @apply font-mono text-[0.72rem] uppercase tracking-[0.28em] text-signal-cyan;
+  }
+
+  .prose-readable {
+    @apply max-w-prose text-fluid-lead text-slateMuted-200;
+  }
+
+  /* Subtle film grain. Pure decoration, hidden from assistive tech. */
+  .grain::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    pointer-events: none;
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .hairline {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-white/15 to-transparent;
+  }
+
+  /* Elements revealed by GSAP start hidden only when motion is enabled, so the
+     content is never trapped invisible for reduced-motion or no-JS readers. */
+  [data-animate='pending'] {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .sr-only-focusable:not(:focus):not(:focus-within) {
+    position: absolute;
+    width: 1px;
+    height: 1px
+    ;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+}
+
+/* Respect the OS setting: no transforms, no transitions, no autoplay motion. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-animate='pending'] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Manual pause switch: same guarantees as the OS setting. */
+[data-motion='paused'] *,
+[data-motion='paused'] *::before,
+[data-motion='paused'] *::after {
+  animation-play-state: paused !important;
+}
+
+[data-motion='paused'] [data-animate='pending'] {
+  opacity: 1;
+  transform: none;
+}
+
+/* Print: linear, ink-friendly case studies. */
+@media print {
+  @page {
+    margin: 16mm;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #111 !important;
+    font-size: 11pt;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: #000 !important;
+    page-break-after: avoid;
+  }
+
+  .glass,
+  .glass-strong {
+    background: none !important;
+    border: 1px solid #bbb !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+  }
+
+  [data-print='hide'] {
+    display: none !important;
+  }
+
+  [data-print='block'] {
+    display: block !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  section {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  a[href^='http']::after {
+    content: ' (' attr(href) ')';
+    font-size: 9pt;
+    color: #555;
+  }
+}
