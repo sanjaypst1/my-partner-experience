@@ -32,7 +32,7 @@ function EvidenceCoverageTable() {
         Metric evidence position by measurement level.
       </caption>
       <thead>
-        <tr className="border-b border-white/10 text-[0.72rem] uppercase tracking-[0.14em] text-slateMuted-400">
+        <tr className="border-b border-slateMuted-100/10 text-[0.72rem] uppercase tracking-[0.14em] text-slateMuted-400">
           <th scope="col" className="py-2 font-medium">
             Measurement level
           </th>
@@ -49,7 +49,7 @@ function EvidenceCoverageTable() {
           const metrics = metricsByLevel(level.id);
           const confirmed = metrics.filter(isRenderableMetric).length;
           return (
-            <tr key={level.id} className="border-b border-white/5 text-slateMuted-200">
+            <tr key={level.id} className="border-b border-slateMuted-100/5 text-slateMuted-200">
               <th scope="row" className="py-2 font-normal">
                 {level.title}
               </th>
@@ -97,7 +97,7 @@ export function MetricsSection() {
                   {level.title}
                 </h3>
                 <p className="mt-1.5 text-[0.85rem] italic text-slateMuted-300">{level.question}</p>
-                <ul className="mt-4 space-y-1.5 border-t border-white/10 pt-3">
+                <ul className="mt-4 space-y-1.5 border-t border-slateMuted-100/10 pt-3">
                   {level.indicators.map((indicator) => (
                     <li key={indicator} className="text-[0.84rem] text-slateMuted-200">
                       {indicator}
@@ -133,11 +133,11 @@ export function MetricsSection() {
           <aside className="glass p-5">
             <h3 className="text-fluid-h3">Where the evidence stands</h3>
             <dl className="mt-4 space-y-3">
-              <div className="flex items-baseline justify-between gap-3 border-b border-white/10 pb-2">
+              <div className="flex items-baseline justify-between gap-3 border-b border-slateMuted-100/10 pb-2">
                 <dt className="text-[0.88rem] text-slateMuted-300">Metrics tracked</dt>
                 <dd className="font-display text-[1.4rem] text-slateMuted-100">{summary.total}</dd>
               </div>
-              <div className="flex items-baseline justify-between gap-3 border-b border-white/10 pb-2">
+              <div className="flex items-baseline justify-between gap-3 border-b border-slateMuted-100/10 pb-2">
                 <dt className="text-[0.88rem] text-slateMuted-300">Confirmed and shareable</dt>
                 <dd className="font-display text-[1.4rem] text-signal-cyan">{summary.verified}</dd>
               </div>

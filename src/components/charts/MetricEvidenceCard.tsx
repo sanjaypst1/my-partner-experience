@@ -29,7 +29,7 @@ export function MetricEvidenceCard({ metric, className }: { metric: Metric; clas
         'flex h-full flex-col gap-2 rounded-xl2 border p-4',
         renderable
           ? 'border-signal-cyan/35 bg-signal-cyan/[0.05]'
-          : 'border-white/12 bg-white/[0.025]',
+          : 'border-slateMuted-100/12 bg-slateMuted-100/[0.025]',
         className,
       )}
     >

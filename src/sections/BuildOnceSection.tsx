@@ -38,7 +38,7 @@ export function BuildOnceSection() {
               {buildOnceContent.standardisedCore.map((item) => (
                 <li
                   key={item}
-                  className="rounded-lg border border-white/12 bg-midnight-900/50 px-3 py-2 text-[0.86rem] text-slateMuted-100"
+                  className="rounded-lg border border-slateMuted-100/12 bg-midnight-900/50 px-3 py-2 text-[0.86rem] text-slateMuted-100"
                 >
                   {item}
                 </li>
@@ -62,7 +62,7 @@ export function BuildOnceSection() {
               {buildOnceContent.configurableEdges.map((item) => (
                 <li
                   key={item}
-                  className="rounded-lg border border-white/12 bg-midnight-900/50 px-3 py-2 text-[0.86rem] text-slateMuted-100"
+                  className="rounded-lg border border-slateMuted-100/12 bg-midnight-900/50 px-3 py-2 text-[0.86rem] text-slateMuted-100"
                 >
                   {item}
                 </li>

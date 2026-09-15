@@ -75,7 +75,7 @@ export function Pax8ApplicationSection() {
                       {hypotheticalProgram[block.key].map((item) => (
                         <li
                           key={item}
-                          className="rounded-full border border-white/12 bg-white/[0.04] px-3 py-1.5 text-[0.82rem] text-slateMuted-200"
+                          className="rounded-full border border-slateMuted-100/12 bg-slateMuted-100/[0.04] px-3 py-1.5 text-[0.82rem] text-slateMuted-200"
                         >
                           {item}
                         </li>

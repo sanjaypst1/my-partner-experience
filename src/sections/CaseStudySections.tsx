@@ -18,10 +18,11 @@ export function DaimlerSection() {
       study={studyById('daimler')}
       visual={
         <div className="space-y-4">
-          <h3 className="text-fluid-h3">The same chain, in Pax8 terms</h3>
+          <h3 className="text-fluid-h3">The same operating chain, read another way</h3>
           <p className="prose-readable">
-            The structure I worked in maps onto the Pax8 ecosystem cleanly. Switch the labels to see
-            it — the Pax8 view is illustrative, not work I have delivered.
+            The structure of a channel experience — vendor, platform, partner, customer — is
+            durable. Switch the labels for a hypothetical reading of that chain; it is illustrative,
+            not work already delivered.
           </p>
           <Pax8TranslationToggle />
         </div>

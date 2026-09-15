@@ -1,8 +1,8 @@
 import type { Config } from 'tailwindcss';
 
 /**
- * Original design system: "connected partner ecosystem".
- * Midnight substrate + signal colours (cyan / violet / magenta) + amber for outcomes.
+ * Bright, high-contrast design system: soft paper substrate, deep ink text,
+ * saturated signal accents for structure and storytelling.
  */
 const config: Config = {
   content: ['./index.html', './src/**/*.{ts,tsx}'],
@@ -11,25 +11,27 @@ const config: Config = {
     extend: {
       colors: {
         midnight: {
-          950: '#04060f',
-          900: '#070b1a',
-          850: '#0a1024',
-          800: '#0e142e',
-          700: '#151d3d',
-          600: '#1d2750',
+          // Kept as the "page substrate" token name so components stay stable —
+          // values are now bright paper tones for readability.
+          950: '#f5f7fb',
+          900: '#eef1f7',
+          850: '#ffffff',
+          800: '#e3e8f2',
+          700: '#d0d7e6',
+          600: '#b8c1d4',
         },
         signal: {
-          cyan: '#3ee8f2',
-          violet: '#8b6cff',
-          magenta: '#ff6bc4',
-          amber: '#ffb454',
+          cyan: '#0b8f9c',
+          violet: '#5a3fd4',
+          magenta: '#c0267a',
+          amber: '#b86a0d',
         },
         slateMuted: {
-          100: '#e8ecf7',
-          200: '#c6cddf',
-          300: '#9aa4bf',
-          400: '#7b86a3',
-          500: '#5c6684',
+          100: '#0f1729',
+          200: '#243044',
+          300: '#3d4a63',
+          400: '#5a6780',
+          500: '#7a869c',
         },
       },
       fontFamily: {
@@ -70,32 +72,28 @@ const config: Config = {
         xl3: '2rem',
       },
       boxShadow: {
-        glass: '0 1px 0 0 rgb(255 255 255 / 0.07) inset, 0 24px 60px -30px rgb(4 6 15 / 0.9)',
-        glow: '0 0 0 1px rgb(62 232 242 / 0.28), 0 18px 48px -20px rgb(62 232 242 / 0.35)',
-        focus: '0 0 0 3px rgb(4 6 15 / 1), 0 0 0 6px rgb(62 232 242 / 0.85)',
+        glass: '0 1px 0 0 rgb(255 255 255 / 0.7) inset, 0 18px 40px -28px rgb(15 23 41 / 0.22)',
+        glow: '0 0 0 1px rgb(11 143 156 / 0.28), 0 14px 36px -18px rgb(11 143 156 / 0.35)',
+        focus: '0 0 0 3px rgb(245 247 251 / 1), 0 0 0 6px rgb(11 143 156 / 0.85)',
       },
       backgroundImage: {
         'ecosystem-radial':
-          'radial-gradient(120% 90% at 12% 8%, rgb(139 108 255 / 0.30) 0%, transparent 55%), radial-gradient(100% 80% at 92% 12%, rgb(62 232 242 / 0.22) 0%, transparent 52%), radial-gradient(90% 70% at 60% 105%, rgb(255 107 196 / 0.18) 0%, transparent 60%)',
-        'signal-line': 'linear-gradient(90deg, transparent, rgb(62 232 242 / 0.75), transparent)',
+          'radial-gradient(120% 90% at 12% 8%, rgb(90 63 212 / 0.12) 0%, transparent 55%), radial-gradient(100% 80% at 92% 12%, rgb(11 143 156 / 0.12) 0%, transparent 52%), radial-gradient(90% 70% at 60% 105%, rgb(192 38 122 / 0.08) 0%, transparent 60%)',
+        'signal-line': 'linear-gradient(90deg, transparent, rgb(11 143 156 / 0.75), transparent)',
         'grid-fine':
-          'linear-gradient(to right, rgb(255 255 255 / 0.045) 1px, transparent 1px), linear-gradient(to bottom, rgb(255 255 255 / 0.045) 1px, transparent 1px)',
+          'linear-gradient(to right, rgb(15 23 41 / 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgb(15 23 41 / 0.05) 1px, transparent 1px)',
       },
       backgroundSize: {
-        // Distinct key from the `grid-fine` background image so `bg-*` stays unambiguous.
         'grid-cell': '58px 58px',
       },
       transitionTimingFunction: {
         expressive: 'cubic-bezier(0.16, 1, 0.3, 1)',
       },
       keyframes: {
-        // Opacity only. Transforms on SVG shapes move them relative to the viewBox
-        // origin rather than their own centre, which throws a diagram out of alignment.
         'node-glow': {
           '0%, 100%': { opacity: '0.4' },
           '50%': { opacity: '1' },
         },
-        // Signals travel along a line by moving the dash pattern, so the line stays put.
         'signal-dash': {
           from: { strokeDashoffset: '0' },
           to: { strokeDashoffset: '-16' },

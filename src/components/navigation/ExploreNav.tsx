@@ -48,8 +48,8 @@ export function ExploreNav() {
                   className={cn(
                     'rounded-full px-3 py-2 text-[0.82rem] transition-colors',
                     isCurrent
-                      ? 'bg-white/10 font-semibold text-slateMuted-100'
-                      : 'text-slateMuted-300 hover:bg-white/[0.06] hover:text-slateMuted-100',
+                      ? 'bg-slateMuted-100/8 font-semibold text-slateMuted-100'
+                      : 'text-slateMuted-300 hover:bg-slateMuted-100/[0.06] hover:text-slateMuted-100',
                   )}
                 >
                   {item.label}
@@ -62,7 +62,7 @@ export function ExploreNav() {
                     onClick={() => setOpenMenu(isOpen ? null : item.id)}
                     aria-expanded={isOpen}
                     aria-label={`${isOpen ? 'Hide' : 'Show'} ${item.label} case studies`}
-                    className="rounded-full p-1.5 text-slateMuted-400 transition-colors hover:bg-white/[0.06] hover:text-slateMuted-100"
+                    className="rounded-full p-1.5 text-slateMuted-400 transition-colors hover:bg-slateMuted-100/[0.06] hover:text-slateMuted-100"
                   >
                     <ChevronDown
                       aria-hidden="true"
@@ -85,8 +85,8 @@ export function ExploreNav() {
                         className={cn(
                           'w-full rounded-lg px-3 py-2 text-left text-[0.85rem] transition-colors',
                           visibleSection === child.id
-                            ? 'bg-white/10 text-slateMuted-100'
-                            : 'text-slateMuted-300 hover:bg-white/[0.07] hover:text-slateMuted-100',
+                            ? 'bg-slateMuted-100/8 text-slateMuted-100'
+                            : 'text-slateMuted-300 hover:bg-slateMuted-100/[0.07] hover:text-slateMuted-100',
                         )}
                       >
                         {child.label}

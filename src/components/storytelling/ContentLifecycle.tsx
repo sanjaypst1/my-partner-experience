@@ -33,7 +33,7 @@ export function ContentLifecycle() {
                     'touch-target rounded-xl border px-3.5 py-2 text-left transition-colors duration-300',
                     isActive
                       ? 'border-signal-magenta/50 bg-signal-magenta/10 text-slateMuted-100'
-                      : 'border-white/12 bg-white/[0.03] text-slateMuted-300 hover:text-slateMuted-100',
+                      : 'border-slateMuted-100/12 bg-slateMuted-100/[0.03] text-slateMuted-300 hover:text-slateMuted-100',
                   )}
                 >
                   <span className="block font-mono text-[0.64rem] uppercase tracking-[0.14em] text-slateMuted-500">

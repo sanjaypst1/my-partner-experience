@@ -78,7 +78,7 @@ export function SignalChain({
           data-state="active"
           className={cn(
             'group relative flex h-full flex-col gap-2 rounded-xl2 border p-4 transition-[border-color,background,opacity] duration-500 ease-expressive',
-            'border-white/10 bg-white/[0.03] opacity-60 data-[state=active]:opacity-100',
+            'border-slateMuted-100/10 bg-slateMuted-100/[0.03] opacity-60 data-[state=active]:opacity-100',
             tokens.activeBorder,
           )}
         >

@@ -25,7 +25,7 @@ export function Header() {
       className={cn(
         'fixed inset-x-0 top-0 z-40 transition-colors duration-500',
         condensed
-          ? 'border-b border-white/10 bg-midnight-950/88 backdrop-blur-md'
+          ? 'border-b border-slateMuted-100/10 bg-midnight-950/88 backdrop-blur-md'
           : 'bg-gradient-to-b from-midnight-950/85 to-transparent',
       )}
     >
@@ -59,7 +59,7 @@ export function Header() {
               type="button"
               onClick={togglePaused}
               aria-pressed={paused}
-              className="touch-target hidden items-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-3 py-2 text-[0.78rem] text-slateMuted-200 transition-colors hover:text-slateMuted-100 sm:inline-flex"
+              className="touch-target hidden items-center gap-2 rounded-full border border-slateMuted-100/15 bg-slateMuted-100/[0.04] px-3 py-2 text-[0.78rem] text-slateMuted-200 transition-colors hover:text-slateMuted-100 sm:inline-flex"
             >
               {paused ? (
                 <Play aria-hidden="true" className="h-3.5 w-3.5" />

@@ -44,7 +44,7 @@ export function MobileMenu() {
         onClick={() => setOpen(true)}
         aria-expanded={open}
         aria-controls={panelId}
-        className="touch-target inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.05] px-3 py-2 text-[0.85rem] text-slateMuted-100"
+        className="touch-target inline-flex items-center gap-2 rounded-full border border-slateMuted-100/15 bg-slateMuted-100/[0.05] px-3 py-2 text-[0.85rem] text-slateMuted-100"
       >
         <Menu aria-hidden="true" className="h-4 w-4" />
         Sections
@@ -58,12 +58,12 @@ export function MobileMenu() {
           aria-label="Site sections"
           className="fixed inset-0 z-[70] flex flex-col bg-midnight-950/97 backdrop-blur-md"
         >
-          <div className="flex items-center justify-between border-b border-white/10 px-5 py-4">
+          <div className="flex items-center justify-between border-b border-slateMuted-100/10 px-5 py-4">
             <p className="font-display text-[1rem] text-slateMuted-100">Explore freely</p>
             <button
               type="button"
               onClick={close}
-              className="touch-target inline-flex items-center gap-2 rounded-full border border-white/15 px-3 py-2 text-[0.85rem] text-slateMuted-100"
+              className="touch-target inline-flex items-center gap-2 rounded-full border border-slateMuted-100/15 px-3 py-2 text-[0.85rem] text-slateMuted-100"
             >
               <X aria-hidden="true" className="h-4 w-4" />
               Close
@@ -86,7 +86,7 @@ export function MobileMenu() {
                       'touch-target w-full rounded-xl border px-4 py-3 text-left text-[1rem]',
                       current === item.id
                         ? 'border-signal-cyan/50 bg-signal-cyan/10 font-semibold text-slateMuted-100'
-                        : 'border-white/10 bg-white/[0.03] text-slateMuted-200',
+                        : 'border-slateMuted-100/10 bg-slateMuted-100/[0.03] text-slateMuted-200',
                     )}
                   >
                     {item.label}
@@ -116,7 +116,7 @@ export function MobileMenu() {
           </nav>
 
           {!active ? (
-            <div className="border-t border-white/10 px-5 py-4">
+            <div className="border-t border-slateMuted-100/10 px-5 py-4">
               <Button
                 className="w-full"
                 onClick={() => {

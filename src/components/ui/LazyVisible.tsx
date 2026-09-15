@@ -50,7 +50,7 @@ export function LazyVisible({
         <div
           role="status"
           aria-busy="true"
-          className="grid h-full place-items-center rounded-xl2 border border-white/10 bg-white/[0.02] text-[0.82rem] text-slateMuted-400"
+          className="grid h-full place-items-center rounded-xl2 border border-slateMuted-100/10 bg-slateMuted-100/[0.02] text-[0.82rem] text-slateMuted-400"
           style={{ minHeight }}
         >
           {label}

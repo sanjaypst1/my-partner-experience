@@ -22,9 +22,9 @@ export function CompassDial() {
     <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-center">
       <FigureWithDescription title="The Compass model" description={description}>
         <div className="relative mx-auto aspect-square w-full max-w-sm">
-          <div className="absolute inset-0 rounded-full border border-white/12" />
-          <div className="absolute inset-[12%] rounded-full border border-white/10" />
-          <div className="absolute inset-[30%] rounded-full border border-dashed border-white/12" />
+          <div className="absolute inset-0 rounded-full border border-slateMuted-100/12" />
+          <div className="absolute inset-[12%] rounded-full border border-slateMuted-100/10" />
+          <div className="absolute inset-[30%] rounded-full border border-dashed border-slateMuted-100/12" />
           <div
             className={cn(
               'absolute inset-[42%] rounded-full bg-gradient-to-br',
@@ -46,7 +46,7 @@ export function CompassDial() {
                   positions[directionIndex],
                   isActive
                     ? cn('bg-midnight-850', tokens.border, tokens.text)
-                    : 'border-white/12 bg-midnight-900/80 text-slateMuted-300 hover:text-slateMuted-100',
+                    : 'border-slateMuted-100/12 bg-midnight-900/80 text-slateMuted-300 hover:text-slateMuted-100',
                 )}
               >
                 <span className="font-display text-[0.9rem] font-semibold">{direction.heading}</span>
@@ -63,7 +63,7 @@ export function CompassDial() {
         <p className={cn('eyebrow', accent(active.accent).text)}>{active.heading}</p>
         <h3 className="mt-2 text-fluid-h3">{active.subject}</h3>
         <p className="mt-3 text-[0.95rem] leading-relaxed text-slateMuted-300">{active.detail}</p>
-        <ul className="mt-5 space-y-2 border-t border-white/10 pt-4">
+        <ul className="mt-5 space-y-2 border-t border-slateMuted-100/10 pt-4">
           {compassDirections.map((direction) => (
             <li key={direction.id} className="flex gap-3 text-[0.85rem]">
               <span className="w-24 shrink-0 font-mono text-[0.7rem] uppercase tracking-[0.12em] text-slateMuted-500">

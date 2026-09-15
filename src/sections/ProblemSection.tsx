@@ -60,7 +60,7 @@ export function ProblemSection() {
             {problemContent.challenges.map((challenge) => (
               <li
                 key={challenge}
-                className="flex items-start gap-2.5 rounded-xl2 border border-white/10 bg-white/[0.025] p-4 text-[0.88rem] text-slateMuted-200"
+                className="flex items-start gap-2.5 rounded-xl2 border border-slateMuted-100/10 bg-slateMuted-100/[0.025] p-4 text-[0.88rem] text-slateMuted-200"
               >
                 <TriangleAlert
                   aria-hidden="true"

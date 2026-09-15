@@ -65,7 +65,7 @@ export function ProgramRoadmap({
   return (
     <FigureWithDescription title={title} description={description}>
       <div ref={containerRef} className="relative">
-        <div className="relative mb-6 h-px w-full bg-white/10">
+        <div className="relative mb-6 h-px w-full bg-slateMuted-100/8">
           <span
             ref={trackRef}
             className={cn('absolute inset-0 origin-left bg-gradient-to-r', tokens.gradient)}

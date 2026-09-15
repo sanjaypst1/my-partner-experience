@@ -49,7 +49,7 @@ export function StarStory({
       <div
         role="tablist"
         aria-label={`${study.employer} case study detail`}
-        className="flex flex-wrap gap-1 border-b border-white/10 p-2"
+        className="flex flex-wrap gap-1 border-b border-slateMuted-100/10 p-2"
         data-print="hide"
       >
         {panels.map((panel) => {
@@ -77,8 +77,8 @@ export function StarStory({
               className={cn(
                 'touch-target rounded-full px-3.5 py-2 text-[0.82rem] transition-colors',
                 isActive
-                  ? cn('bg-white/10 font-semibold text-slateMuted-100', tokens.text)
-                  : 'text-slateMuted-300 hover:bg-white/[0.06] hover:text-slateMuted-100',
+                  ? cn('bg-slateMuted-100/8 font-semibold text-slateMuted-100', tokens.text)
+                  : 'text-slateMuted-300 hover:bg-slateMuted-100/[0.06] hover:text-slateMuted-100',
               )}
             >
               {panelLabels[panel]}

@@ -20,7 +20,7 @@ export function ChallengeResolutionCard({
     <div
       className={cn(
         'h-full rounded-xl2 border transition-colors duration-300',
-        expanded ? 'border-signal-cyan/40 bg-signal-cyan/[0.05]' : 'border-white/12 bg-white/[0.025]',
+        expanded ? 'border-signal-cyan/40 bg-signal-cyan/[0.05]' : 'border-slateMuted-100/12 bg-slateMuted-100/[0.025]',
       )}
     >
       <h3>
@@ -34,7 +34,7 @@ export function ChallengeResolutionCard({
         >
           <span
             aria-hidden="true"
-            className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full border border-white/20 font-mono text-[0.68rem] text-slateMuted-300"
+            className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full border border-slateMuted-100/20 font-mono text-[0.68rem] text-slateMuted-300"
           >
             {challenge.number}
           </span>
@@ -50,7 +50,7 @@ export function ChallengeResolutionCard({
       </h3>
 
       <div id={panelId} role="region" aria-labelledby={buttonId} hidden={!expanded} data-print="block">
-        <div className="border-t border-white/10 p-4">
+        <div className="border-t border-slateMuted-100/10 p-4">
           <p className="flex items-start gap-2 text-[0.7rem] font-mono uppercase tracking-[0.16em] text-signal-cyan">
             <ArrowRight aria-hidden="true" className="mt-0.5 h-3.5 w-3.5" />
             How I would respond

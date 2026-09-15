@@ -59,31 +59,31 @@ export function EvidenceCoverageChart() {
       <div className="h-[280px] w-full">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={data} margin={{ top: 8, right: 8, bottom: 8, left: -18 }}>
-            <CartesianGrid stroke="rgba(255,255,255,0.08)" vertical={false} />
+            <CartesianGrid stroke="rgba(15,23,41,0.08)" vertical={false} />
             <XAxis
               dataKey="shortLevel"
-              stroke="#9aa4bf"
-              tick={{ fontSize: 12 }}
+              stroke="#5a6780"
+              tick={{ fontSize: 12, fill: '#5a6780' }}
               tickLine={false}
-              axisLine={{ stroke: 'rgba(255,255,255,0.12)' }}
+              axisLine={{ stroke: 'rgba(15,23,41,0.12)' }}
             />
             <YAxis
-              stroke="#9aa4bf"
-              tick={{ fontSize: 12 }}
+              stroke="#5a6780"
+              tick={{ fontSize: 12, fill: '#5a6780' }}
               tickLine={false}
               axisLine={false}
               allowDecimals={false}
             />
             <Tooltip
               contentStyle={{
-                background: '#0a1024',
-                border: '1px solid rgba(255,255,255,0.14)',
+                background: '#ffffff',
+                border: '1px solid rgba(15,23,41,0.12)',
                 borderRadius: 12,
-                color: '#e8ecf7',
+                color: '#0f1729',
                 fontSize: 13,
               }}
             />
-            <Legend wrapperStyle={{ fontSize: 12, color: '#9aa4bf' }} />
+            <Legend wrapperStyle={{ fontSize: 12, color: '#5a6780' }} />
             <Bar dataKey="Confirmed" stackId="a" fill={accentTokens.cyan.hex} radius={[0, 0, 0, 0]} />
             <Bar
               dataKey="Being validated"

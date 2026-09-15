@@ -28,11 +28,11 @@ export function HeroSection() {
           before the diagram starts so the ecosystem is not washed out. */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-midnight-950/75 lg:hidden"
+        className="absolute inset-0 -z-10 bg-midnight-950/90 lg:hidden"
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 hidden bg-gradient-to-r from-midnight-950 from-35% to-transparent to-60% lg:block"
+        className="absolute inset-0 -z-10 hidden bg-gradient-to-r from-midnight-950 from-40% to-transparent to-68% lg:block"
       />
 
       <div ref={containerRef} className="shell">

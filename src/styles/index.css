@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    color-scheme: dark;
+    color-scheme: light;
     --shell-padding: clamp(1.25rem, 4vw, 4rem);
   }
 
@@ -53,7 +53,7 @@
 
   /* Firefox-friendly scrollbar treatment. */
   * {
-    scrollbar-color: theme('colors.midnight.600') transparent;
+    scrollbar-color: theme('colors.midnight.600') theme('colors.midnight.950');
   }
 }
 
@@ -63,11 +63,11 @@
   }
 
   .glass {
-    @apply rounded-xl2 border border-white/10 bg-white/[0.035] shadow-glass backdrop-blur-[2px];
+    @apply rounded-xl2 border border-slateMuted-100/10 bg-white/80 shadow-glass backdrop-blur-[2px];
   }
 
   .glass-strong {
-    @apply rounded-xl2 border border-white/[0.14] bg-midnight-850/85 shadow-glass backdrop-blur-md;
+    @apply rounded-xl2 border border-slateMuted-100/12 bg-white/92 shadow-glass backdrop-blur-md;
   }
 
   .eyebrow {
@@ -91,7 +91,7 @@
   }
 
   .hairline {
-    @apply h-px w-full bg-gradient-to-r from-transparent via-white/15 to-transparent;
+    @apply h-px w-full bg-gradient-to-r from-transparent via-slateMuted-100/15 to-transparent;
   }
 
   /* Elements revealed by GSAP start hidden only when motion is enabled, so the

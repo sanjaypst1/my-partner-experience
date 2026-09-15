@@ -19,7 +19,7 @@ export function Pax8TranslationToggle() {
   const chain = (
     <ol className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
       {active.nodes.map((node, nodeIndex) => (
-        <li key={node.id} className="relative flex h-full flex-col gap-1.5 rounded-xl2 border border-white/12 bg-white/[0.04] p-4">
+        <li key={node.id} className="relative flex h-full flex-col gap-1.5 rounded-xl2 border border-slateMuted-100/12 bg-slateMuted-100/[0.04] p-4">
           <span className="font-mono text-[0.64rem] uppercase tracking-[0.16em] text-slateMuted-500">
             Step {nodeIndex + 1}
           </span>
@@ -62,7 +62,7 @@ export function Pax8TranslationToggle() {
                 'touch-target rounded-full border px-4 py-2 text-[0.84rem] transition-colors',
                 isActive
                   ? 'border-signal-cyan/50 bg-signal-cyan/10 font-semibold text-slateMuted-100'
-                  : 'border-white/15 bg-white/[0.03] text-slateMuted-300 hover:text-slateMuted-100',
+                  : 'border-slateMuted-100/15 bg-slateMuted-100/[0.03] text-slateMuted-300 hover:text-slateMuted-100',
               )}
             >
               {option.label}

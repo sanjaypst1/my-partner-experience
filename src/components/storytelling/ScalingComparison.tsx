@@ -19,7 +19,7 @@ export function ScalingComparison() {
               'flex h-full flex-col rounded-xl2 border p-5',
               isGood
                 ? 'border-signal-cyan/45 bg-signal-cyan/[0.06] shadow-glow'
-                : 'border-white/12 bg-white/[0.025]',
+                : 'border-slateMuted-100/12 bg-slateMuted-100/[0.025]',
             )}
           >
             <p
@@ -37,7 +37,7 @@ export function ScalingComparison() {
             </p>
             <h3 className="mt-3 text-fluid-h3">{pattern.label}</h3>
             <p className="mt-2 text-[0.88rem] text-slateMuted-200">{pattern.approach}</p>
-            <p className="mt-4 border-t border-white/10 pt-4 text-[0.86rem] leading-relaxed text-slateMuted-300">
+            <p className="mt-4 border-t border-slateMuted-100/10 pt-4 text-[0.86rem] leading-relaxed text-slateMuted-300">
               {pattern.consequence}
             </p>
           </li>

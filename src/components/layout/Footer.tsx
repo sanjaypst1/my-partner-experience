@@ -3,7 +3,7 @@ import { ConfidentialityNotice } from '@/components/accessibility/Confidentialit
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/10 py-12">
+    <footer className="border-t border-slateMuted-100/10 py-12">
       <div className="shell flex flex-col gap-6">
         <div className="hairline" aria-hidden="true" />
         <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">

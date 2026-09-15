@@ -23,22 +23,22 @@ export const layerMeta: Record<EcosystemLayer, { label: string; description: str
   vendor: {
     label: 'Technology and vendor teams',
     description: 'Build the product and define the technical narrative.',
-    hex: '#8b6cff',
+    hex: '#5a3fd4',
   },
   platform: {
     label: 'Central platform and program',
     description: 'Aggregates, governs and enables at scale.',
-    hex: '#3ee8f2',
+    hex: '#0b8f9c',
   },
   partner: {
     label: 'Partners',
     description: 'Package, position and deliver the capability.',
-    hex: '#ff6bc4',
+    hex: '#c0267a',
   },
   customer: {
     label: 'End customers',
     description: 'Experience the outcome the whole chain exists for.',
-    hex: '#ffb454',
+    hex: '#b86a0d',
   },
 };
 

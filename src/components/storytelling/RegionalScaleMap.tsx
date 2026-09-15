@@ -82,8 +82,8 @@ export function RegionalScaleMap() {
             className={cn(
               'touch-target rounded-full border px-3.5 py-2 text-[0.8rem] transition-colors',
               activeWave === wave
-                ? 'border-white/40 bg-white/10 font-semibold text-slateMuted-100'
-                : 'border-white/12 bg-white/[0.03] text-slateMuted-300 hover:text-slateMuted-100',
+                ? 'border-slateMuted-100/40 bg-slateMuted-100/8 font-semibold text-slateMuted-100'
+                : 'border-slateMuted-100/12 bg-slateMuted-100/[0.03] text-slateMuted-300 hover:text-slateMuted-100',
             )}
           >
             {waveLabels[wave]}
@@ -96,7 +96,7 @@ export function RegionalScaleMap() {
         description={description}
         dataTable={dataTable}
       >
-        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl2 border border-white/10 bg-midnight-900/60">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl2 border border-slateMuted-100/10 bg-midnight-900/60">
           <svg viewBox="0 0 100 60" className="h-full w-full" preserveAspectRatio="xMidYMid meet">
             <defs>
               <radialGradient id="region-halo" cx="50%" cy="50%" r="50%">

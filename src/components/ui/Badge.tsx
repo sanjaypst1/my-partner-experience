@@ -33,7 +33,7 @@ export function Badge({
 
 export function Tag({ children }: { children: ReactNode }) {
   return (
-    <span className="rounded-full border border-white/12 bg-white/[0.04] px-2.5 py-1 text-[0.75rem] text-slateMuted-300">
+    <span className="rounded-full border border-slateMuted-100/12 bg-slateMuted-100/[0.04] px-2.5 py-1 text-[0.75rem] text-slateMuted-300">
       {children}
     </span>
   );

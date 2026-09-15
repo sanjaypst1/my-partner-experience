@@ -23,7 +23,7 @@ export function VerificationBadge({
         'inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 font-mono text-[0.66rem] uppercase tracking-[0.16em]',
         verified
           ? 'border-signal-cyan/50 bg-signal-cyan/10 text-signal-cyan'
-          : 'border-slateMuted-500/60 bg-white/[0.03] text-slateMuted-300',
+          : 'border-slateMuted-500/60 bg-slateMuted-100/[0.03] text-slateMuted-300',
         className,
       )}
     >

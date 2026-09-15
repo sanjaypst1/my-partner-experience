@@ -62,8 +62,8 @@ export function OperatingModelPillars() {
                 className={cn(
                   'h-full w-full rounded-xl2 border p-4 text-left transition-all duration-300 ease-expressive',
                   isActive
-                    ? cn('bg-white/[0.06]', pillarTokens.border)
-                    : 'border-white/12 bg-white/[0.025] hover:border-white/25',
+                    ? cn('bg-slateMuted-100/[0.06]', pillarTokens.border)
+                    : 'border-slateMuted-100/12 bg-slateMuted-100/[0.025] hover:border-slateMuted-100/25',
                 )}
               >
                 <span
@@ -142,7 +142,7 @@ export function OperatingModelPillars() {
           ))}
         </div>
 
-        <div className="mt-7 border-t border-white/10 pt-5">
+        <div className="mt-7 border-t border-slateMuted-100/10 pt-5">
           <h4 className="font-mono text-[0.68rem] uppercase tracking-[0.16em] text-slateMuted-500">
             Relevance to Pax8
           </h4>

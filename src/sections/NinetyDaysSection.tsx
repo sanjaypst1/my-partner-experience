@@ -35,8 +35,8 @@ export function NinetyDaysSection() {
                   className={cn(
                     'w-full rounded-xl2 border p-4 text-left transition-colors duration-300',
                     isActive
-                      ? cn('bg-white/[0.06]', tokens.border)
-                      : 'border-white/12 bg-white/[0.025] hover:border-white/25',
+                      ? cn('bg-slateMuted-100/[0.06]', tokens.border)
+                      : 'border-slateMuted-100/12 bg-slateMuted-100/[0.025] hover:border-slateMuted-100/25',
                   )}
                 >
                   <span
